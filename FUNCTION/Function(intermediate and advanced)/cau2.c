@@ -1,0 +1,7 @@
+int kth_digit(int n, int k)
+{
+    if (k == 0)
+        return n % 10;
+    else
+        return kth_digit(n / 10, k - 1);
+}
